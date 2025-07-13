@@ -1,0 +1,9 @@
+### Send message to admin
+POST http://localhost:4477/api/sendadmin
+Content-Type: application/json
+
+{
+  "text": "Test message to admin from REST client.",
+  "success": "Message sent successfully!",
+  "error": "Failed to send message."
+} 
