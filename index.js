@@ -11,7 +11,10 @@ const ip = IP;
 
 // API to update JSON file
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:3000', 'https://inessazheurova.com', 'http://inessazheurova.com'],
+  credentials: true
+}));
 
 
 const client = new Client({
